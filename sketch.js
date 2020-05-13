@@ -1,8 +1,8 @@
 let img;
 let poseNet;
 let poses = [];
-// let imgURL = 'data/runner.jpeg';
-let imgURL = 'https://www.pexels.com/photo/cheerful-sportswoman-running-along-hill-in-summer-3771112/';
+let imgURL = 'data/runner.jpeg';
+// let imgURL = 'https://www.pexels.com/photo/cheerful-sportswoman-running-along-hill-in-summer-3771112/';
 // let imgURL = 'http://processing.org/img/processing-web.png';
 let imgURL1 = 'data/6.jpg';
 let imgURL2 = 'data/9.jpg';
