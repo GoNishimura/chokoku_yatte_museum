@@ -7,12 +7,13 @@ function setup() {
 
     // create an image using the p5 dom library
     // call modelReady() when it is loaded
-    img = createImg('data/runner2.jpg', imageReady);
+    // img = createImg('data/runner2.jpg', imageReady);
+    img = loadImage('data/runner2.jpg', imageReady);
     // putting URL isn't woking
     // set the image size to the size of the canvas
-    img.size(width, height);
+    // img.size(width, height);
 
-    img.hide(); // hide the image in the browser
+    // img.hide(); // hide the image in the browser
     frameRate(1); // set the frameRate to 1 since we don't need it to be running quickly in this case
 }
 

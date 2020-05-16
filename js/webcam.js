@@ -12,8 +12,15 @@ function setup() {
   video = createCapture(VIDEO);
   video.size(width, height); // strong resize
 
+  // set some options
+    let options = {
+        imageScaleFactor: 1,
+        minConfidence: 0.1,
+        // detectionType: 'multiple',
+    }
+    if (useResNet) options['architecture'] = 'ResNet50';
   // Create a new poseNet method with a single detection
-  poseNet = ml5.poseNet(video, modelReady);
+  poseNet = ml5.poseNet(video, options, modelReady);
   // This sets up an event that fills the global variable "poses"
   // with an array every time new poses are detected
   poseNet.on('pose', function(results) {

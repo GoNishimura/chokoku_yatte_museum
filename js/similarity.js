@@ -11,6 +11,8 @@ posenet.load().then(function(net) {
   ])
 }).then(function(poses){
   // Calculate the weighted distance between the two poses
-  var weightedDistance = pns.poseSimilarity(poses[0], poses[1], {strategy: 'cosineSimilarity'});
+  var weightedDistance = pns.poseSimilarity(poses[0], poses[1]);
+  // var weightedDistance = pns.poseSimilarity(poses[0], poses[1], {strategy: 'cosineSimilarity'});
+  console.log(poses[0]);
   console.log(weightedDistance)
 })
